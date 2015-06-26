@@ -203,7 +203,7 @@ init([]) ->
                 dbname_regexp=RegExp,
                 max_dbs_open=MaxDbsOpen,
                 update_lru_on_read=UpdateLruOnRead,
-                start_time=couch_util:rfc1123_date()}}.
+                start_time=httpd_util:rfc1123_date()}}.
 
 terminate(Reason, Srv) ->
     couch_log:error("couch_server terminating with ~p, state ~2048p",
